@@ -16,23 +16,23 @@ class RecordsController < ApplicationController
     @category = Category.find(params[:category_id])
     @record = @category.records.build(record_params)
     @record.author = current_user
-  
+
     if params[:record][:category_ids].present?
       @record.category_ids = params[:record][:category_ids]
     else
-      @record.errors.add(:category_ids, "must be selected")
+      @record.errors.add(:category_ids, 'must be selected')
     end
-  
+
     if @record.save
-      redirect_to category_records_path(@category), notice: "Record created successfully."
+      redirect_to category_records_path(@category), notice: 'Record created successfully.'
     else
       render :new
     end
   end
-  
-  
-  
-  
+
+
+
+
   # Other actions such as edit, update, and destroy can be added as needed
 
   private
@@ -40,5 +40,4 @@ class RecordsController < ApplicationController
   def record_params
     params.require(:record).permit(:name, :amount, :category_id, category_ids: [])
   end
-  
 end

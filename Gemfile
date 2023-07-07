@@ -3,10 +3,10 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.2.2'
 
-gem "devise"
-gem 'letter_opener', group: :development
 gem 'cancancan'
+gem 'devise'
 gem 'font-awesome-sass'
+gem 'letter_opener', group: :development
 gem 'rails-controller-testing'
 gem 'rspec-rails'
 
@@ -56,7 +56,7 @@ gem 'bootsnap', require: false
 # gem "image_processing", "~> 1.2"
 
 group :development, :test do
-    gem 'shoulda-matchers'
+  gem 'shoulda-matchers'
 end
 
 group :development do

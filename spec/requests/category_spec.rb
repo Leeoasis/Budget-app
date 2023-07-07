@@ -39,9 +39,9 @@ RSpec.describe 'Categories', type: :request do
       it 'creates a new category' do
         category_params = { name: 'Category 3', icon: 'icon3.jpg' }
 
-        expect {
+        expect do
           post '/categories', params: { category: category_params }
-        }.to change(Category, :count).by(1)
+        end.to change(Category, :count).by(1)
 
         expect(response).to redirect_to(categories_path)
         expect(flash[:notice]).to eq('Category created successfully.')
@@ -52,9 +52,9 @@ RSpec.describe 'Categories', type: :request do
       it 'does not create a new category' do
         category_params = { name: '', icon: 'icon3.jpg' }
 
-        expect {
+        expect do
           post '/categories', params: { category: category_params }
-        }.not_to change(Category, :count)
+        end.not_to change(Category, :count)
 
         expect(response).to render_template(:new)
       end
