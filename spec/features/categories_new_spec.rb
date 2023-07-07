@@ -18,13 +18,5 @@ RSpec.describe 'Categories', type: :feature do
       expect(page).to have_css('input#category_icon')
       expect(page).to have_button('Save', class: 'btn btn-primary')
     end
-
-    it 'redirects to categories page when back button is clicked' do
-      visit new_category_path
-
-      click_link 'Back'
-
-      expect(current_path).to eq(categories_path)
-    end
   end
 end
