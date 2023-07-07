@@ -1,0 +1,37 @@
+<div class="navbar">
+  <h1 class="navbar-brand">New Transaction</h1>
+  <%= link_to category_records_path(@category), class: "navbar-right" do %>
+  <i class="fas fa-arrow-left"></i>
+  <span class="sr-only">Back</span>
+<% end %>
+
+</div>
+
+<div class="form-container">
+  <h1>New Transaction</h1>
+
+<%= form_for [@category, @record], html: { class: "navbar-form" } do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :amount %>
+  <%= f.number_field :amount %>
+
+  <%= f.label :categories %>
+  <%= f.select :category_ids, Category.all.map { |category| [category.name, category.id] }, { include_blank: true }, { multiple: true } %>
+
+  <%= f.submit "Create Transaction", class: "btn btn-primary" %>
+<% end %>
+
+
+  <% if @record.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@record.errors.count, "error") %> prohibited this record from being saved:</h2>
+      <ul>
+        <% @record.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+</div>
