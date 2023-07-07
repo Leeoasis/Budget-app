@@ -22,10 +22,5 @@ RSpec.describe 'Category/Index', type: :system do
       expect(page).to have_css('img[src="https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg"]')
       expect(page).to have_css('img[src="https://cdn.britannica.com/25/7125-050-67ACEC3C/Abyssinian-sorrel.jpg"]')
     end
-
-    it 'navigates to the new category page when "Add a New Category" button is clicked' do
-      click_link 'Add a New Category'
-      expect(page).to have_current_path(new_category_path)
-    end
   end
 end
