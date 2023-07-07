@@ -1,0 +1,21 @@
+<div class="form-container">
+  <div class="navbar">
+    <h1 class="navbar-brand">New Category</h1>
+    <%= link_to categories_path, class: "navbar-right" do %>
+  <i class="fas fa-arrow-left"></i>
+  <span class="sr-only">Back</span>
+<% end %>
+
+  </div>
+
+  <%= form_for @category, html: { class: "navbar-form" } do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+
+    <%= f.label :icon %>
+    <%= f.text_field :icon %>
+
+    <%= f.submit "Save", class: "btn btn-primary" %>
+  <% end %>
+
+</div>
