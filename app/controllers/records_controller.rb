@@ -30,11 +30,6 @@ class RecordsController < ApplicationController
     end
   end
 
-
-
-
-  # Other actions such as edit, update, and destroy can be added as needed
-
   private
 
   def record_params
