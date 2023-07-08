@@ -26,6 +26,7 @@
       </li>
     <% end %>
   </ul>
-
-  <%= link_to "Add a new transaction", new_category_record_path(@category), class: "btn btn-primary add-transaction" %>
+  <div class="add-transaction">
+  <%= link_to "Add a new transaction", new_category_record_path(@category), class: "add-transaction-button" %>
+  </div>
 </main>
