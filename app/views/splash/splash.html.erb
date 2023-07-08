@@ -1,0 +1,10 @@
+<div class="splash-container">
+  <div class="splash-content">
+    <h1 class="splash-brand">Welcome to Your Budget Management App</h1>
+    <p class="splash-brand2">Track and manage your budget with ease.</p>
+  </div>
+  <div class="splash-buttons">
+    <%= link_to 'Sign up', new_user_registration_path, class: 'splash-button1' %>
+    <%= link_to 'Log in', new_user_session_path(redirect_to: categories_path), class: 'splash-button2' %>
+  </div>
+</div>

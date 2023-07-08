@@ -1,3 +1,4 @@
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -13,3 +14,528 @@
  *= require_tree .
  *= require_self
  */
+
+.nav-link {
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+}
+
+.nav-link:hover {
+  background-color: #0056b3;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav li {
+  list-style: none;
+}
+
+.form-control {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.form-control:focus {
+  border-color: blue;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+}
+
+.splash-btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.btn-color {
+  background-color: #3778c2;
+  color: white;
+}
+
+.btn-col:hover {
+  background-color: #3778c2;
+  color: white;
+}
+
+.btn-container {
+  background-color: #5fb523;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+}
+
+.btn-form-container {
+  background-color: #5fb523;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+}
+
+.btn-style {
+  background-color: #5fb523;
+  width: 100%;
+  color: white;
+  border: 2px solid white;
+  border-radius: 0;
+}
+
+.btn-style:hover {
+  background-color: #63d511;
+  color: white;
+}
+
+.nav_bar_m {
+  margin: 0 1rem;
+}
+
+.proxima-bold {
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 700;
+}
+
+.proxima-semi-bold {
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 400;
+}
+
+.splash-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #434b54;
+}
+
+.splash-content {
+  text-align: center;
+}
+
+.splash-buttons {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 10px;
+  text-decoration: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 95vw;
+}
+
+.splash-button1 {
+  background-color: #3778c2;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.splash-button2 {
+  color: #434b54;
+  text-decoration: none;
+  text-align: center;
+}
+
+.registration_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.registration_form_container {
+  width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form_title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.field {
+  margin-bottom: 15px;
+}
+
+.label_field {
+  font-weight: bold;
+}
+
+.input_field {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.registration_button {
+  background-color: #3778c2;
+  color: white;
+  width: 100%;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.registration_button:hover {
+  background-color: #285f9b;
+}
+
+.login-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-form {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.devise-log-in,
+.devise-sign-up,
+.devise-registration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #3778c2;
+  text-decoration: none;
+  color: white;
+}
+
+.label-field {
+  font-weight: bold;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.remember-label {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.login-button {
+  background-color: #3778c2;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.login-button:hover {
+  background-color: #285f9b;
+}
+
+.actions {
+  text-align: center;
+}
+
+.navbar {
+  background-color: #3778c2;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.category-title {
+  font-size: 15px;
+}
+
+.record-title {
+  font-size: 25px;
+}
+
+.navbar-right {
+  margin-left: auto;
+}
+
+.main-content {
+  margin-bottom: 80px;
+}
+
+.add-transaction {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  height: 40px;
+  background-color: #5fb523;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-transaction-button {
+  color: white;
+  padding: 10px 15rem;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.record-list {
+  list-style-type: none;
+}
+
+.record-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.record-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.category-record-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.category-record-info {
+  display: flex;
+  align-items: center;
+}
+
+.category-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.amount {
+  text-align: right;
+}
+
+.category-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.category-details h2 {
+  margin: 0;
+  margin-right: 10px;
+}
+
+.category-details .amount {
+  margin: 0;
+}
+
+.view-transactions {
+  margin-top: 10px;
+}
+
+.view-transactions .btn {
+  display: block;
+}
+
+.category-details .category-icon {
+  margin-right: 20px;
+}
+
+.navbar-form {
+  margin-top: 20px;
+}
+
+.form-container {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.form-container label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-container .btn-primary {
+  background-color: #3778c2;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#error_explanation {
+  color: red;
+  margin-top: 10px;
+}
+
+#error_explanation h2 {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#error_explanation ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.navbar-menu li {
+  margin-left: 10px;
+}
+
+#error_explanation li {
+  margin-bottom: 5px;
+}
+
+.btn-secondary {
+  background-color: #999;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.btn-secondary:hover {
+  background-color: #666;
+}
+
+.navbar-toggle {
+  display: none;
+}
+
+.navbar-toggle-label {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+}
+
+.navbar-toggle-label span {
+  display: block;
+  background-color: white;
+  height: 3px;
+  margin-bottom: 4px;
+  transition: all 0.3s ease;
+}
+
+.navbar-menu {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .splash-buttons {
+    width: 93%;
+    margin-left: 2px;
+  }
+
+  .record-title {
+    margin-left: 5px;
+  }
+
+  .login-form {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .registration_container {
+    align-items: flex-start;
+    padding-top: 5px;
+  }
+
+  .registration_form_container {
+    width: 100%;
+    max-width: 400px;
+    border: none;
+  }
+
+  .input_field {
+    width: 100%;
+  }
+
+  .registration_button {
+    width: 100%;
+  }
+}
+
+.navbar-toggle:checked ~ .navbar-menu {
+  display: flex;
+}

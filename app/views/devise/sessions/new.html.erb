@@ -1,0 +1,23 @@
+<% content_for :back_path, root_path %>
+<% content_for :page_name, "LOGIN" %>
+<% content_for :nav_button do %>
+<%= button_tag "Log in", type: "submit", form: "new_user", class: "nav-link text-white log" %>
+<% end %>
+
+<%= render partial: 'shared/navbar' %>
+
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <div>
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control", placeholder: "Email" %>
+  </div>
+
+  <div class="mb-3">
+    <%= f.password_field :password, autocomplete: "current-password", class: "form-control", placeholder: "Password" %>
+  </div>
+
+  <% if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations' %>
+      <div class="d-flex justify-content-center">
+    <%= link_to "Forgot password?", new_password_path(resource_name), class: "text-decoration-none" %>
+  </div>
+  <% end %>
+<% end %>

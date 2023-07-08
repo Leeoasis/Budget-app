@@ -1,0 +1,28 @@
+<% content_for :back_path, root_path %>
+<% content_for :page_name, "REGISTER" %>
+<% content_for :nav_button do %>
+  <%= button_tag "Sign up", type: "submit", form: "new_user", class: "nav-link text-white" %>
+<% end %>
+
+<%= render partial: 'shared/navbar' %>
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+
+  <div>
+    <%= f.text_field :name, autofocus: true, autocomplete: "name", class: "form-control form-field border-0 border-bottom", placeholder: "Full name"%>
+  </div>
+
+  <div>
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control form-field border-0 border-bottom", placeholder: "Email" %>
+  </div>
+
+  <div>
+    <%= f.password_field :password, autocomplete: "new-password", class: "form-control form-field border-0 border-bottom", 
+    placeholder: "Password #{@minimum_password_length} characters minimum" %>
+  </div>
+
+  <div class="mb-3">
+    <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "form-control form-field border-0 border-bottom", placeholder: "Confirm Password" %>
+  </div>
+<% end %>
